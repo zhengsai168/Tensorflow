@@ -8,7 +8,7 @@ batch_size=128
 test_size=256
 
 mnist = input_data.read_data_sets("D:/code/py/mnist_data",one_hot = True) 
-trX,trY,teX,teY=mnist.train.images,mnist.train.labels,mnist.test.images,mnist.train.labels
+trX,trY,teX,teY=mnist.train.images,mnist.train.labels,mnist.test.images,mnist.test.labels
 
 #trX=tf.reshape(trX,[-1,28,28,1])
 #teX=tf.reshape(teX,[-1,28,28,1])
