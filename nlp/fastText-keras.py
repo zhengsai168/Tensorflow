@@ -12,7 +12,7 @@ def build_fastText():
     model = Sequential()
     model.add(Embedding(VOCAB_SIZE, EMBEDDING_DIM, input_length=MAX_WORD))  # 根据词序号取词向量
     model.add(GlobalAveragePooling1D())  # 对词向量求均值
-    model.add(Dense(CLASS_NUM, activation='softmax'))
+    model.add(Dense(CLASS_NUM, activation='softmax')) # 输出class_num维的softmax归一化后的概率
     model.compile(loss='categorical_crossentropy', optimizer='SGD', metrics=['accuracy'])
     return model
 
