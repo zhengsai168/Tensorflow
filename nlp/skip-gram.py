@@ -6,7 +6,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 tf.reset_default_graph()
-
+tf.nn.rnn_cell.BasicRNNCell
+tf.nn.rnn_cell.BasicLSTMCell
 # 3 Words Sentence
 sentences = [ "i like dog", "i like cat", "i like animal",
               "dog cat animal", "apple cat dog like", "dog fish milk like",
